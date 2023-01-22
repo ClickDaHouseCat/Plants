@@ -1,0 +1,792 @@
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: #EDF2EC;
+    }
+
+.wrapper {
+    width: 100%;
+    max-width: 1470px;
+    margin: auto;
+}
+a {
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.welcomeContent{
+    width: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+.welcome {
+    background: #EDF2EC;
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+    height: 134px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.logo {
+    display: flex;
+    align-items: baseline;
+    gap: 2px;
+
+}
+
+.logo img {
+    padding-left: 1px;
+}
+
+.logo p {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+nav ul {
+    width: 450px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    list-style: none;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 50px;
+}
+
+a:hover {
+    color: #E06733;
+    transition: 0.5s;
+}
+
+.welcome-block {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 59px;
+    padding-bottom: 55px;
+
+}
+
+.welcome-text {
+    max-width: 548px;
+    /* height: 340px; */
+    margin-right: 9px;
+}
+
+.welcome-block img {
+    width: 100%;
+    max-width: 455px;
+    margin-left: -15px;
+}
+
+.plantsFirst {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 50px;
+    color: #717171;
+    margin-top: 1px;
+}
+
+.plantsSecond {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    color: #636060;
+    margin-top: 44px;
+}
+
+.btnPlants {
+    width: 158px;
+    height: 44px;
+    border: 2px solid #E06733;
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+.about {
+    width: 100%;
+    background-color: white;
+
+}
+
+.aboutContent{
+    max-width: 100%;
+    width: 1220px;
+    display: flex;
+    justify-content: space-between;
+    padding: 93px 0;
+    margin: 0 auto;
+}
+
+.aboutContent img {
+    width: 100%;
+    max-width: 464px;
+    height: 479px;
+}
+
+.aboutText {
+    width: 100%;
+    max-width: 603px;
+    margin-top: 67px;
+}
+
+.aboutTextFirst {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+}
+
+.aboutTextSecond {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #636060;
+    margin-top: 39px;
+}
+
+.service {
+    background: #EDF2EC;
+    /* height: 1300px; */
+    padding-top: 6px;
+}
+
+.serviceContent {
+    width: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+.serviceSelector {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1008px;
+    /* height: 94px; */
+    padding: 42px 0 80px;
+}
+
+.serviceText {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+}
+
+.serviceBtns {
+    display: flex;
+    justify-content: space-between;
+    width: 561px;
+    height: 46px;
+    margin-left: 5px;
+}
+
+.serviceBtn {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 161px;
+    height: 50px;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #E06733;
+}
+
+.serviceCards {
+    width: 100%;
+    max-width: 1220px;
+    /* height: 955px; */
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    padding-bottom: 120px;
+}
+
+.tServiceCards1, .tServiceCards2, .tServiceCards3 {
+    display: none;
+}
+
+.serviceCard {
+    width: 100%;
+    max-width: 330px;
+    height: 450px;
+    box-sizing: border-box;
+    border: 1px solid #E3E1D5;
+    border-radius: 20px 20px;
+}
+
+.serviceCards1, .serviceCards2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1220px;
+}
+
+.cardImg1 {
+    background: url(../assets/img/GardenСare.jpg) no-repeat center;
+}
+
+.cardImg2 {
+    background: url(../assets/img/Planting.jpg) no-repeat center;
+}
+
+.cardImg3 {
+    background: url(../assets/img/LawnСare.jpg) no-repeat center;
+}
+
+.cardImg4 {
+    background: url(../assets/img/Planting2.jpg) no-repeat center;
+}
+
+.cardImg5 {
+    background: url(../assets/img/GardenСare2.jpg) no-repeat center;
+}
+
+.cardImg6 {
+    background: url(../assets/img/Planting3.jpg) no-repeat center;
+}
+
+
+.cardImg {
+    background-size: cover;
+    width: 100%;
+    max-width: 330px;
+    height: 350px;
+    border-radius: 20px 20px 0px 0px ;
+}
+
+.cardName {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #E06733;
+    text-align: center;
+    margin-top: 9px;
+    margin-bottom: -1px;
+}
+
+.cardDesc{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #717171;
+    text-align: center;
+    padding-top: 14px;
+}
+
+.prices {
+    background-color: white;
+}
+
+.pricesContent, .h2Prices{
+    width: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    color: #000000;
+}
+
+.pricesLeftContent {
+    display: flex;
+    flex-direction: column;
+    margin-top: 33px;
+}
+
+.pricesLeftContent p {
+    margin: 0;
+    padding-top: 32px;
+}
+
+.plansBtn {
+    width: 250px;
+    height: 50px;
+    background: #EDF2EC;
+    border-radius: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 23px 37px;
+
+}
+
+.prices {
+    /* height: 553px; */
+    padding-bottom: 107px;
+}
+
+.plans {
+    margin-top: 60px;
+    padding: 33px 41px;
+    width: 332px;
+    height: 282px;
+    box-sizing: border-box;
+    border: 1px solid #E3E1D5;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+
+.plansBtn img {
+    width: 16px;
+    height: 16px;
+}
+
+
+.pricesRightContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 452px;
+
+}
+
+.pricesRightContent p {
+    margin: 0;
+    padding-left: 1px;
+    padding-top: 34px;
+    text-align: right;
+}
+
+
+.pricesBtn {
+    width: 162px;
+    height: 50px;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #E06733;
+    margin-top: 41px;
+}
+
+.pricesRightContent img {
+    width: 157px;
+    height: 187px;
+}
+
+.rightContentImg {
+    margin-top: 35px;
+}
+
+.contacts {
+    /* height: 550px; */
+    background: #EDF2EC;
+}
+
+.contactsContent {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+.woman {
+    margin-top: 53px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.contactsBtn {
+    height: 50px;
+    width: 450px;
+    background: #D6E7D2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px;
+    margin-top: 148px;
+    text-align: left;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: #717171;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+    align-items: center;
+}
+
+.contactText{
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+    margin-top: 60px;
+}
+
+.footer {
+    /* height: 130px; */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+    color: #000000;
+    background-color: white;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.textFooter {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.rolling {
+    padding-left: 12px;
+}
+
+.footerContent {
+    display: flex;
+    /* height: 130px; */
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+
+.socialLinks {
+    display: flex;
+    gap: 25px;
+    padding-right: 2px;
+    padding-top: 11px;
+}
+
+.socialLink {
+    list-style-type:none;
+}
+
+.socialLinks img {
+    width: 26.67px;
+    height: 26.67px;
+}
+
+@media (min-width: 380px) and (max-width: 768px){
+    .header {
+        justify-content: space-around;
+        padding-top: 35px;
+        gap: 50px;
+        align-items: baseline;
+        height: 0;
+        padding-bottom: 110px;
+    }
+
+    .nav ul {
+        padding-right: 3px;
+    }
+    .welcome-block {
+        flex-direction: row-reverse;
+        padding-top: 0;
+    }
+
+    .welcome-text {
+        margin: 0;
+        padding-left: 49px;
+    }
+
+    .welcome-block img {
+        max-width: 280px;
+        padding-left: 75px;
+        padding: 10px 48px 70px;
+    }
+    .plantsFirst {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 50px;
+    }
+    .plantsSecond {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+        padding-top: 31px;
+        padding-left: 6px;
+        margin: 0;
+    }
+    .btnPlants {
+        margin-top: 35px;
+    }
+    .aboutContent {
+        align-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0;
+        justify-content: center;
+    }
+    .aboutText {
+        margin-top: 40px;
+        max-width: 645px;
+    }
+
+    .aboutTextFirst {
+        font-family: 'Inika';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 46px;
+        text-align: center;
+        padding-left: 23px;
+    }
+
+    .aboutTextSecond {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 50px;
+    }
+
+    .aboutContent img {
+        max-width: 250px;
+        height: 258px;
+        margin: 69px 209px;
+        padding-bottom: 25px;
+    }
+
+    .serviceSelector {
+        flex-direction: column;
+        align-items: baseline;
+        padding: 42px 0 45px;
+    }
+
+    .serviceText {
+        font-family: 'Inika';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 46px;
+        padding: 12px 326px 0 45px;
+        margin-right: 8px;
+    }
+
+    .serviceBtns {
+        padding: 41px 0 0 44px;
+    }
+
+    .serviceCards1, .serviceCards2 {
+        display: none;
+    }
+
+    .serviceCards{
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 38px;
+        padding-bottom: 73px;
+    }
+
+    .tServiceCards1, .tServiceCards2, .tServiceCards3 {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 108px;
+        padding-left: 50px;
+    }
+
+    .serviceCard{
+        max-width: 280px;
+    }
+
+    .cardImg1 {
+        background: url(../assets/img/tGardenСare.jpg) no-repeat center;
+    }
+
+    .cardImg2 {
+        background: url(../assets/img/tPlanting.jpg) no-repeat center;
+    }
+
+    .cardImg3 {
+        background: url(../assets/img/tLawnСare.jpg) no-repeat center;
+    }
+
+    .cardImg4 {
+        background: url(../assets/img/tPlanting2.jpg) no-repeat center;
+    }
+
+    .cardImg5 {
+        background: url(../assets/img/tGardenСare2.jpg) no-repeat center;
+    }
+
+    .cardImg6 {
+        background: url(../assets/img/tPlanting3.jpg) no-repeat center;
+    }
+
+    .cardDesc {
+        padding: 11px 6px 0;
+    }
+
+    .prices{
+        padding-bottom: 72px;
+    }
+
+    .pricesContent {
+        justify-content: center;
+        gap: 43px;
+    }
+
+    .pricesLeftContent {
+        margin-top: 25px;
+    }
+
+    .h2Prices {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 42px;
+        text-align: center;
+        padding: 10px 0 0 14px;
+    }
+
+    .pricesRightContent p{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 35px;
+        text-align: right;
+        padding-top: 137px;
+    }
+
+    .pricesRightContent{
+        max-width: 296px;
+    }
+
+    .pricesBtn {
+        margin-top: 29px;
+    }
+
+    .contactsContent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .woman {
+        order: 1;
+        max-width: 200px;
+        padding-left: 20px;
+        margin-top: 250px;
+    }
+
+    .contactText {
+        margin-top: 42px;
+    }
+
+    .contactsBtn {
+        margin-top: 100px;
+    }
+
+    .footerContent{
+        flex-direction: column;
+    }
+
+    .footer {
+        padding: 18px 0 0 0;
+    }
+
+    .textFooter{
+        padding-right: 7px;
+    }
+
+    .rolling {
+        padding: 1px 0;
+        margin-top: -9px;
+    }
+
+}
+
+* @media (min-width: 380px) and (max-width: 610px){
+    .serviceBtn {
+
+    }
+} *
