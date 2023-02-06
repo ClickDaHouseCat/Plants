@@ -20,6 +20,48 @@ html {
     max-width: 1470px;
     margin: auto;
 }
+
+.burgerMenu {
+    width: 100%;
+    display: none;
+    transition: 0.3s;
+}
+
+.burgerMenu ul{
+    background-color: white;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin-left: 55%;
+    list-style: none;
+    padding: 2% 4%;
+    height: 100%;
+    font-size: 20px;
+    /* display: none; */
+    margin: 0;
+}
+
+.burgerMenu ul li {
+    padding: 10px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.burgerBtn {
+    display: none;
+}
+
+.burgerBtnClose{
+    width: 35px;
+    margin-left: 43%;
+    border: none;
+    border-radius: 5px;
+    background-color: #D6E7D2;
+}
+
 a {
     color:rgb(0, 0, 0);
     text-decoration: none;
@@ -47,6 +89,10 @@ a {
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
+}
+
+.burger {
+    display: none;
 }
 
 .logo {
@@ -230,7 +276,8 @@ a:hover {
 .serviceBtns {
     display: flex;
     justify-content: space-between;
-    width: 561px;
+    width: 100%;
+    max-width: 561px;
     height: 46px;
     margin-left: 5px;
 }
@@ -262,6 +309,10 @@ a:hover {
 
 .tServiceCards1, .tServiceCards2, .tServiceCards3 {
     display: none;
+}
+
+.blur {
+    filter: blur(3px);
 }
 
 .serviceCard {
@@ -381,6 +432,7 @@ a:hover {
     align-items: center;
     justify-content: space-between;
     padding: 23px 37px;
+    border: none;
 
 }
 
@@ -392,8 +444,8 @@ a:hover {
 .plans {
     margin-top: 60px;
     padding: 33px 41px;
-    width: 332px;
-    height: 282px;
+    width: 100%;
+    max-width: 332px;
     box-sizing: border-box;
     border: 1px solid #E3E1D5;
     border-radius: 20px;
@@ -413,7 +465,8 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    width: 452px;
+    width: 100%;
+    max-width: 452px;
 
 }
 
@@ -470,10 +523,12 @@ a:hover {
 
 .contactsBtn {
     height: 50px;
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     background: #D6E7D2;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 0px;
+    border: none;
     margin-top: 148px;
     text-align: left;
     font-family: 'Inter';
@@ -549,7 +604,8 @@ a:hover {
     height: 26.67px;
 }
 
-@media (min-width: 380px) and (max-width: 768px){
+@media (min-width: 320px) and (max-width: 768px){
+
     .header {
         justify-content: space-around;
         padding-top: 35px;
@@ -785,8 +841,240 @@ a:hover {
 
 }
 
-* @media (min-width: 380px) and (max-width: 610px){
-    .serviceBtn {
+@media (min-width: 320px) and (max-width: 600px){
+    nav {
+        display: none;
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 14px;
+        gap: 225px;
+        padding-bottom: 72px;
+    }
+
+    .burgerMenu {
+        display: none;
+    }
+
+    .open {
+        display: block;
+        position: absolute;
 
     }
-} *
+
+    .burgerBtn {
+        display: block;
+    }
+
+    .welcome-block {
+        padding-bottom: 24px;
+    }
+
+    .welcome-block img {
+        display: none;
+    }
+
+    .welcome-text {
+        padding: 0 25px
+    }
+
+    .plantsFirst {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 35px;
+        display: flex;
+        align-items: center;
+        display: block;
+    }
+
+    .plantsSecond {
+        padding: 20px 0 0;
+    }
+
+    .btnPlants {
+        width: 100px;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 20px;
+        height: 34px;
+        margin-top: 26px;
+    }
+
+    .aboutText {
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+
+    .aboutTextFirst {
+        font-size: 25px;
+        line-height: 33px;
+        padding-left: 0;
+    }
+
+    .aboutTextSecond {
+        font-size: 15px;
+        line-height: 25px;
+        padding: 0 25px;
+        margin-top: 14px;
+    }
+
+    .aboutContent img {
+        width: 150px;
+        height: 153px;
+        margin: 0 auto;
+        padding-bottom: 27px;
+    }
+
+    .serviceText {
+        font-size: 25px;
+        line-height: 33px;
+        padding-left: 25px;
+        padding-right: 165px;
+        margin: 0;
+    }
+
+    .serviceSelector {
+        padding-top: 12px;
+    }
+
+    .serviceBtns {
+        margin: 0;
+        justify-content: normal;
+        flex-wrap: wrap;
+        padding: 39px 0 0 25px;
+        gap: 9px;
+    }
+
+    .serviceBtn {
+        width: 121px;
+        height: 35px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .serviceCards{
+        gap: 34px;
+        padding-bottom: 27px;
+    }
+
+    .tServiceCards1,.tServiceCards2,.tServiceCards3{
+        flex-direction: column;
+        gap: 25px;
+        padding-left: 0;
+        margin: auto;
+    }
+
+    .tServiceCards1 {
+        padding-top: 28px;
+        gap: 33px;
+    }
+
+    .cardName {
+        margin-top: 8px;
+    }
+
+    .cardDesc{
+        padding-top: 13px;
+    }
+
+    .tServiceCards2,.tServiceCards3 {
+        gap: 34px;
+    }
+
+    .pricesContent {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .h2Prices {
+        font-size: 25px;
+        line-height: 30px;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .plans {
+        max-width: 224px;
+        padding:27px 20px 23px;
+        margin-top: 37px;
+        gap: 15px;
+    }
+
+    .plansBtn {
+        max-width: 180px;
+        font-size: 15px;
+        line-height: 20px;
+        padding: 0 29px;
+    }
+
+    .pricesRightContent p {
+        text-align: center;
+        padding: 0;
+        padding-left: 2px;
+        font-size: 20px;
+    }
+
+    .pricesRightContent {
+        padding: 23px 0 0;
+        align-items: center;
+        max-width: 248px;
+    }
+
+    .rightContentImg {
+        display: none;
+    }
+
+    .pricesBtn {
+        width: 121px;
+        margin-top: 21px;
+        font-size: 15px;
+        line-height: 20px;
+        height: 35px;
+    }
+
+    .prices {
+        padding-bottom: 40px;
+    }
+
+    .contacts{
+        padding: 0 35px;
+    }
+
+    .contactText {
+        font-size: 25px;
+        line-height: 33px;
+        padding-right: 5px;
+        margin-top: 25px;
+    }
+
+    .contactsBtn {
+        margin-top: 82px;
+        padding: 0 21px;
+    }
+
+    .woman {
+        width: 100px;
+        margin-top: 131px;
+        padding: 0;
+        padding-right: 5px;
+    }
+
+    .footer {
+        padding-top: 9px;
+    }
+
+    .textFooter {
+        gap: 23px;
+    }
+
+    .socialLinks {
+        margin-top: -6px;
+        padding: 0;
+    }
+
+}

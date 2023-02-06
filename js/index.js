@@ -1,1 +1,49 @@
-console.log('Требования к вёрстке\nВёрстка валидная +10\nВёрстка семантическая +20\nВ коде странице присутствуют следующие элементы:\n<header>, <main>, <footer> +3\nпять элементов <section> (по кnоличеству секций) +3\nтолько один заголовок <h1> +3\nчетыре заголовка <h2> (количество секций минус одна, у которой заголовок <h1>) +3\nодин элемент <nav> (панель навигации) +3\nдва списка ul > li > a (панель навигации, ссылки на соцсети) +3\nпять кнопок <button> +2\nВёрстка соответствует макету +48\nблок <header> +6\nсекция welcome +7\nсекция about +7\nсекция service +7\nсекция prices +7\nсекция contacts +7\nблок <footer> +7\nТребования к css + 12\nИнтерактивность, реализуемая через css +20\nплавная прокрутка по якорям +5\ncсылки в футере при нажатии на них ведут на гитхаб автора проекта и на страницу курса https://rs.school/js-stage0/ +5\n')
+// Бургер меню
+
+const burger = document.querySelector(".burgerMenu")
+const burgerBtn = document.querySelector(".burgerBtn")
+const burgerBtnClose = document.querySelector(".burgerBtnClose")
+const burgLi = document.querySelectorAll(".burgLi")
+
+    burgerBtn.addEventListener('click', ()=> {
+        burger.classList.toggle('open')
+    })
+    // Выбираем каждый элемент с классом burgLi
+    document.querySelectorAll('.burgLi').forEach((elem) =>
+    elem.addEventListener('click', () => {
+        burger.classList.toggle('open')
+    }))
+
+    // Закрываем меню по нажатию в любое место
+    document.querySelectorAll('.main'),forEach((elem) =>
+    elem.addEventListener('click', ()=> {
+        burger.classList.remove('open')
+    }))
+
+    burgerBtnClose.addEventListener('click', ()=> {
+        burger.classList.toggle('open')
+    })
+
+// Карточки сервисов и проектов
+
+const gardensBtn = document.querySelector(".gardensBtn")
+const lawnBtn = document.querySelector(".lawnBtn")
+const plantingBtn = document.querySelector(".plantingBtn")
+const gardensCrd = document.querySelector(".gardensCrd")
+const lawnCrd = document.querySelector(".lawnCrd")
+const plantingCrd = document.querySelector(".plantingCrd")
+
+gardensBtn.addEventListener('click', () => {
+    lawnCrd.classList.toggle('blur');
+    plantingCrd.classList.toggle('blur');
+})
+
+lawnBtn.addEventListener('click', () => {
+    gardenCrd.classList.toggle('blur');
+    plantingCrd.classList.toggle('blur');
+})
+
+plantingBtn.addEventListener('click', () => {
+    lawnCrd.classList.toggle('blur');
+    gardenCrd.classList.toggle('blur');
+})
