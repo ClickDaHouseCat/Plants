@@ -613,7 +613,7 @@ a:hover {
     height: 26.67px;
 }
 
-@media (min-width: 320px) and (max-width: 768px){
+@media (max-width: 768px){
 
     .header {
         justify-content: space-around;
@@ -621,15 +621,23 @@ a:hover {
         gap: 50px;
         align-items: baseline;
         height: 0;
-        padding-bottom: 110px;
+        padding-bottom: 108px;
     }
 
-    .nav ul {
-        padding-right: 3px;
+    .logo{
+        margin-right: 7px;
     }
+    
+    nav {
+        margin-right: 5px;
+        margin-top: 1px;
+    }
+
+
     .welcome-block {
         flex-direction: row-reverse;
         padding-top: 0;
+        gap: 0;
     }
 
     .welcome-text {
@@ -700,10 +708,14 @@ a:hover {
         padding-bottom: 25px;
     }
 
+    .service{
+        padding-top: 0;
+    }
+
     .serviceSelector {
         flex-direction: column;
         align-items: baseline;
-        padding: 42px 0 45px;
+        margin-top: 48px;
     }
 
     .serviceText {
@@ -720,6 +732,10 @@ a:hover {
         padding: 41px 0 0 44px;
     }
 
+    .serviceBtn{
+        padding: 0;
+    }
+
     .serviceCards1, .serviceCards2 {
         display: none;
     }
@@ -728,7 +744,7 @@ a:hover {
         display: flex;
         flex-wrap: nowrap;
         gap: 38px;
-        margin-top: 76px;
+        margin-top: 44px;
     }
 
     .tServiceCards1, .tServiceCards2, .tServiceCards3 {
@@ -767,16 +783,17 @@ a:hover {
     }
 
     .cardDesc {
-        padding: 11px 6px 0;
+        padding: 11px 11px 0 9px;
     }
 
     .prices{
-        padding-bottom: 72px;
+        padding-bottom: 81px;
+        margin: 72px auto 0;
     }
 
     .pricesContent {
         justify-content: center;
-        gap: 43px;
+        gap: 41px;
     }
 
     .pricesLeftContent {
@@ -793,6 +810,20 @@ a:hover {
         padding: 10px 0 0 14px;
     }
 
+    .plans{
+        margin-top: 57px;
+        padding: 33px 41px;
+        gap: 32px;
+    }
+
+    .plansBtn{
+        padding: 16px 40px;
+    }
+
+    .plansBtn img{
+        padding: 0;
+    }
+
     .pricesRightContent p{
         font-family: 'Inter';
         font-style: normal;
@@ -805,6 +836,11 @@ a:hover {
 
     .pricesRightContent{
         max-width: 296px;
+        margin-top: 2px;
+    }
+
+    .rightContentImg {
+        margin-top: 28px;
     }
 
     .pricesBtn {
@@ -824,7 +860,8 @@ a:hover {
     }
 
     .contactText {
-        margin-top: 42px;
+        margin-top: 38px;
+        margin-left: 0;
     }
 
     .contactsBtn {
@@ -840,7 +877,13 @@ a:hover {
     }
 
     .textFooter{
-        padding-right: 7px;
+        gap: 22px;
+        margin-right: 3px;
+    }
+
+    .socialLinks{
+        padding: 0;
+        margin-top: 7px;
     }
 
     .rolling {
