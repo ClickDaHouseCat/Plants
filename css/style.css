@@ -99,7 +99,7 @@ a {
     display: flex;
     align-items: baseline;
     gap: 2px;
-
+    margin-bottom: 6px;
 }
 
 .logo img {
@@ -143,7 +143,7 @@ a:hover {
     justify-content: space-between;
     padding-top: 59px;
     padding-bottom: 55px;
-
+    gap: 220px;
 }
 
 .welcome-text {
@@ -155,7 +155,7 @@ a:hover {
 .welcome-block img {
     width: 100%;
     max-width: 455px;
-    margin-left: -15px;
+    margin-left: -4px;
 }
 
 .plantsFirst {
@@ -230,6 +230,7 @@ a:hover {
     font-size: 40px;
     line-height: 52px;
     color: #499A18;
+    margin-top: 2px;
 }
 
 .aboutTextSecond {
@@ -239,7 +240,7 @@ a:hover {
     font-size: 20px;
     line-height: 30px;
     color: #636060;
-    margin-top: 39px;
+    margin-top: 37px;
 }
 
 .service {
@@ -260,8 +261,7 @@ a:hover {
     align-items: center;
     width: 100%;
     max-width: 1008px;
-    /* height: 94px; */
-    padding: 42px 0 80px;
+    margin-top: 37px;
 }
 
 .serviceText {
@@ -295,16 +295,21 @@ a:hover {
     font-size: 20px;
     line-height: 26px;
     color: #E06733;
+    padding-bottom: 4px;
+    padding-right: 5px;
+}
+
+.plantingBtn{
+    margin-right: 2px;
 }
 
 .serviceCards {
     width: 100%;
     max-width: 1220px;
-    /* height: 955px; */
     display: flex;
     flex-direction: column;
     gap: 55px;
-    padding-bottom: 120px;
+    margin-top: 78px;
 }
 
 .tServiceCards1, .tServiceCards2, .tServiceCards3 {
@@ -372,8 +377,7 @@ a:hover {
     line-height: 20px;
     color: #E06733;
     text-align: center;
-    margin-top: 9px;
-    margin-bottom: -1px;
+    margin-top: 10px;
 }
 
 .cardDesc{
@@ -385,6 +389,7 @@ a:hover {
     color: #717171;
     text-align: center;
     padding-top: 14px;
+    padding-right: 2px;
 }
 
 .prices {
@@ -394,7 +399,6 @@ a:hover {
 .pricesContent, .h2Prices{
     width: 100%;
     max-width: 1220px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     background-color: white;
@@ -404,6 +408,7 @@ a:hover {
     font-size: 40px;
     line-height: 49px;
     color: #000000;
+    margin: 4px auto 0;
 }
 
 .pricesLeftContent {
@@ -437,8 +442,10 @@ a:hover {
 }
 
 .prices {
-    /* height: 553px; */
-    padding-bottom: 107px;
+    max-width: 1440px;
+    width: 100%;
+    margin: 123px auto 0;
+    padding-bottom: 106px;
 }
 
 .plans {
@@ -458,6 +465,7 @@ a:hover {
 .plansBtn img {
     width: 16px;
     height: 16px;
+    padding-right: 4px;
 }
 
 
@@ -467,7 +475,7 @@ a:hover {
     align-items: flex-end;
     width: 100%;
     max-width: 452px;
-
+    margin-top: 4px;
 }
 
 .pricesRightContent p {
@@ -503,7 +511,7 @@ a:hover {
 }
 
 .contacts {
-    /* height: 550px; */
+    margin-top: 2px;
     background: #EDF2EC;
 }
 
@@ -540,7 +548,7 @@ a:hover {
     color: #717171;
     display: flex;
     justify-content: space-between;
-    padding: 0 24px;
+    padding: 0 34px 0 20px; 
     align-items: center;
 }
 
@@ -551,7 +559,8 @@ a:hover {
     font-size: 40px;
     line-height: 52px;
     color: #499A18;
-    margin-top: 60px;
+    margin-top: 61px;
+    margin-left: 44px;
 }
 
 .footer {
@@ -719,7 +728,7 @@ a:hover {
         display: flex;
         flex-wrap: nowrap;
         gap: 38px;
-        padding-bottom: 73px;
+        margin-top: 76px;
     }
 
     .tServiceCards1, .tServiceCards2, .tServiceCards3 {
@@ -955,11 +964,6 @@ a:hover {
         line-height: 20px;
     }
 
-    .serviceCards{
-        gap: 34px;
-        padding-bottom: 27px;
-    }
-
     .tServiceCards1,.tServiceCards2,.tServiceCards3{
         flex-direction: column;
         gap: 25px;
@@ -972,6 +976,11 @@ a:hover {
         gap: 33px;
     }
 
+    .tServiceCards2,.tServiceCards3 {
+        gap: 34px;
+    }
+
+
     .cardName {
         margin-top: 8px;
     }
@@ -980,10 +989,7 @@ a:hover {
         padding-top: 13px;
     }
 
-    .tServiceCards2,.tServiceCards3 {
-        gap: 34px;
-    }
-
+    
     .pricesContent {
         flex-direction: column;
         align-items: center;
