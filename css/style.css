@@ -1127,3 +1127,77 @@ a:hover {
     }
 
 }
+
+@media (max-width: 380px) {
+    .logo{
+        margin: 0;
+    }
+
+    .aboutText{
+        padding-top: 28px;
+    }
+
+    .serviceSelector{
+        margin-top: 19px;
+        padding: 0;
+    }
+
+    .serviceCards{
+        gap: 0;
+    }
+
+    .tServiceCards2{
+        margin-top: 35px;
+    }
+
+    .lawnCrd .cardDesc{
+        padding-top: 9px;
+    }
+
+    .gardenCrd .cardDesc{
+        padding-top: 11px;
+    }
+
+    .tServiceCards3{
+        margin-top: 34px;
+    }
+
+    .prices{
+        margin-top: 28px;
+    }
+
+    .pricesLeftContent {
+        margin-top: 20px;
+    }
+
+    .plans{
+        padding-bottom: 27px;
+        gap: 14px;
+    }
+
+    .plansBtn{
+        padding: 0px 31px;
+    }
+
+    .plansBtn img {
+        padding-right: 8px;
+    }
+
+    .pB1{
+        margin-top: 2px;
+    }
+
+    .pricesRightContent {
+        padding: 16px 0 0;
+    }
+
+    .contactText{
+        margin-top: 24px;
+    }
+
+    .contactsBtn{
+        margin-top: 80px;
+        max-width: 300px;
+        padding: 0px 22px 3px 18px;
+    }
+}
